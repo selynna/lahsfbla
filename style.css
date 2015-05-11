@@ -1,0 +1,134 @@
+         .nav-container {
+                                                position: relative;
+                                        }
+ 
+                                        .ddg-dropdown > ul {
+                                                margin: 0 auto;
+                                                padding: 0;
+                                                border-radius: 0px;
+                                                background: #249cd2;
+                                                background-image: -ms-linear-gradient(top left, #249cd2 0%, 333333 100%);
+                                                background-image: -moz-linear-gradient(top left, #249cd2 0%, 333333 100%);
+                                                background-image: -o-linear-gradient(top left, #249cd2 0%, 333333 100%);
+                                                background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #249cd2), color-stop(1, 333333));
+                                                background-image: -webkit-linear-gradient(top left, #249cd2 0%, 333333 100%);
+                                                background-image: linear-gradient(to bottom right, #249cd2 0%, 333333 100%);
+                                                box-shadow: 0px 2px 11px rgba(50, 50, 50, 0.75);
+                                        }
+ 
+                                        /* will style only the top level li */
+                                        .ddg-dropdown > ul > li {
+                                                list-style: none;
+                                                display: inline-block;
+                                                /* inline-block fix */
+                                                margin-right:-4px;
+                                                vertical-align: top;
+                                                position: relative;
+                                                border-right: 1px solid #43b2d9;
+                                                padding: 12px  25px 12px 25px;
+                                        }
+                                       
+                                        .ddg-dropdown > ul > li:hover {
+                                                background-color:#3ca8e3;
+                                        }
+ 
+                                        /* Style the color of the links in first level*/
+                                        .ddg-dropdown > ul > li > a {
+                                                color: ffffff;
+                                                text-decoration: none;
+                                                font-size: 16px;
+                                        }
+ 
+                                        .ddg-dropdown ul ul {
+                                                border-left: 1px solid #ccc;
+                                                border-right: 1px solid #ccc;
+                                                border-bottom: 1px solid #ccc;
+                                                position: absolute;
+                                                list-style: none;
+                                                top: 49px;
+                                                left: 0;
+                                                /* This is important for the show/hide CSS animation */
+                                                max-height: 0px;
+                                               
+                                                opacity: 0;
+                                               
+                                                overflow:hidden;
+                                                border-radius: 0 !important;
+                                                width: 200px;
+                                                margin-left: 0;
+                                                padding-left: 0;
+                                                background-color: background-color:;
+                                                -webkit-transition: all 0.3s ease-in-out;
+                                                -moz-transition: all 0.3s ease-in-out;
+                                                transition: all 0.3s ease-in-out;
+                                                overflow:hidden;
+                                        }
+                                       
+                                        /* Style of the UL/Dropdown */
+                                        .ddg-dropdown ul li:hover ul {
+                                                max-height:400px;
+                                                opacity: 1;
+                                        }
+ 
+                                        /* Default background-color of the dropdown LI */
+                                        .ddg-dropdown li ul li {
+                                                background-color: #ffffff;
+                                                border-top: 1px solid #ffffff;
+                                        }
+ 
+                                        /* Styling of the dropdown links */
+                                        .ddg-dropdown li ul li a {
+                                                padding: 8px 12px;
+                                                text-decoration: none;
+                                                display: block;
+                                                font-size: 16px;
+                                                color:
+                                        }
+ 
+ 
+                                        .ddg-dropdown li ul li:hover {
+                                                background-color: #3570bc;
+                                        }
+ 
+                                        .ddg-dropdown li ul li:hover a {
+                                                color: #ffffff;
+                                        }
+                                       
+                                        /* Third Level */
+ 
+                                        .ddg-dropdown ul ul ul {
+                                                display:none;
+                                        }
+                                        .ddg-dropdown ul ul li:hover ul {
+                                                display:block;
+                                                position:absolute;
+                                                visibility:visible;
+                                                left:100%;
+                                                top:0;
+                                                width:200px;
+                                        }
+                                        .ddg-dropdown ul ul ul li {
+                                                display:block;
+                                                background-color:#ffffff;
+                                        }
+ 
+                                        .ddg-dropdown ul ul ul li:hover {
+                                                background-color:#ffffff;
+                                        }
+ 
+ 
+                                        .ddg-dropdown ul ul li:hover ul li a {
+                                                color:#ffffff;
+                                        }
+                                        .ddg-dropdown ul ul li:hover ul li:hover a {
+                                                color:#ffffff;
+                                        }
+ 
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif ;
+}
+ 
+p {
+  font-size: 40px;
+  text-align: center;
+}
